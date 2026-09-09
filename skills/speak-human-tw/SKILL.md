@@ -30,7 +30,7 @@ license: MIT
 
 核心原則一句話：**先保事實，再去 AI 味，最後才加人味。**
 
-寫手與編輯首次使用可看 [README.md](README.md)。需要完整潤稿交付、改寫對照表或 Google Docs 時，再讀 [references/editor-delivery.md](references/editor-delivery.md)。本包已包含語義分段，不依賴其他 humanizer skill；平台工具僅負責文件讀寫。
+首次使用可先看 [README.md](README.md)。需要完整潤稿交付、改寫對照表或 Google Docs 時，再讀 [references/editor-delivery.md](references/editor-delivery.md)。本包已包含語義分段，不依賴其他 humanizer skill；平台工具僅負責文件讀寫。
 
 品牌文章、新版定稿回饋或 CTA 更新，先讀 [references/brand-and-revision.md](references/brand-and-revision.md)。每次從委託人指定的最新品牌資料讀取事實；私人資料庫不寫死在公開 skill。完整生成邏輯與 LINE 派稿、交稿範本見 [references/writer-guide.md](references/writer-guide.md)。
 
