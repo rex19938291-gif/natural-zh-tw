@@ -1,10 +1,10 @@
-# 說人話｜使用說明
+# 去 AI 味｜文章優化版
 
-`speak-human-tw` 用來把繁體中文文章改得自然、具體、容易閱讀，並加入依語義分段、段落留白與交稿核對。只需要安裝這一個資料夾；不需要再疊加其他 humanizer skill。
+`natural-zh-tw` 用來把繁體中文文章改得自然、具體、容易閱讀，並加入依語義分段、段落留白與交稿核對。只需要安裝這一個資料夾；不需要再疊加其他 humanizer skill。
 
 ## 這一包含什麼
 
-完整生成流程、品牌資料更新方式與 LINE 訊息範本，請看 [完整使用說明](skills/speak-human-tw/references/writer-guide.md)；定稿差異與 CTA 核對規則見 [品牌與定稿回饋](skills/speak-human-tw/references/brand-and-revision.md)。
+完整生成流程、品牌資料更新方式與 LINE 訊息範本，請看 [完整使用說明](skills/natural-zh-tw/references/writer-guide.md)；定稿差異與 CTA 核對規則見 [品牌與定稿回饋](skills/natural-zh-tw/references/brand-and-revision.md)。
 
 - 去除空泛套話、誇大語氣與機械句型，保留作者觀點。
 - 繁體中文、台灣用語與標點校正。
@@ -12,13 +12,13 @@
 - 同一意思留在同一段，語義轉換才分段；段落間留白，不逐句換行。
 - 按需提供完整的替換前／替換後對照表，以及文件交付核對。
 
-語句改寫主體沿用 Raymond Hou 的 `speak-human-tw`。分段設計參考 `seo-reading-experience` 的語義切段原則，已整合在本包；不套用其整套文章重編或關鍵字規劃。Google Docs 工具是文件交付方式，並非語句改寫引擎，沒有打包任何帳號、憑證或專用連接器。
+本優化版以 Raymond Hou 採 MIT 授權發布的 `speak-human-tw` 為基礎，另行整合語義分段、SEO 二次確認、品牌資料與文件交付機制。分段設計參考 `seo-reading-experience` 的語義切段原則；Google Docs 工具只負責文件交付，沒有打包任何帳號、憑證或專用連接器。
 
 ## 安裝
 
-從 GitHub 下載本儲存庫，將 `skills/speak-human-tw` **整個資料夾**放進所用工具支援的 skills 目錄。必須保留 `SKILL.md` 與 `references/`，不要只複製單一檔案。
+從 GitHub 下載本儲存庫，將 `skills/natural-zh-tw` **整個資料夾**放進所用工具支援的 skills 目錄。必須保留 `SKILL.md` 與 `references/`，不要只複製單一檔案。
 
-常見專案安裝位置為 Claude Code 的 `.claude/skills/speak-human-tw/` 或 Codex 的 `.agents/skills/speak-human-tw/`。依工具的載入方式重新開啟專案，確認可以選到 `speak-human-tw`。不支援 skills 的聊天工具，可附上本包檔案作為編輯規範使用；這不等於已安裝原生 skill。
+常見專案安裝位置為 Claude Code 的 `.claude/skills/natural-zh-tw/` 或 Codex 的 `.agents/skills/natural-zh-tw/`。依工具的載入方式重新開啟專案，確認可以選到 `natural-zh-tw`。不支援 skills 的聊天工具，可附上本包檔案作為編輯規範使用；這不等於已安裝原生 skill。
 
 ## 怎麼觸發
 
@@ -39,7 +39,7 @@
 ## 直接貼到 Claude 或 Codex 的指令
 
 ```text
-請使用 speak-human-tw 處理以下文章。這次直接套用，不用先列清單等我確認。
+請使用 natural-zh-tw 處理以下文章。這次直接套用，不用先列清單等我確認。
 保留事實、數字、品牌名、SEO 關鍵字、引文、CTA 與網址，不新增作者經歷或承諾。
 去除空泛套話與誇大句型，調整成自然的台灣繁體中文。
 依語義分段：同一個意思的幾句話留在同段，換論點再分段；段落間留白，不逐句換行。
